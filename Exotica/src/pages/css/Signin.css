@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.edu-au-vic-wa-nt-guides {
+  font-family: "Edu AU VIC WA NT Guides", cursive;
+  font-optical-sizing: auto;
+  font-weight: 425;
+  font-style: italic;
+}
