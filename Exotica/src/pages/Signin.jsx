@@ -6,19 +6,19 @@ import image from "../assets/images/153473.png";
 
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
-import { useNavigate } from 'react-router-dom';
-import '../pages/css/Signin.css';
-
-
+import { useNavigate } from "react-router-dom";
+import "../pages/css/Signin.css";
+import Checkbox from "@mui/material/Checkbox";
+import FormControlLabel from "@mui/material/FormControlLabel";
 
 function Signin() {
   const navigate = useNavigate();
   const handleSignIn = () => {
-    navigate('/Home'); };
+    navigate("/Home");
+  };
 
   return (
     <>
-    
       <div className="flex flex-col min-h-screen">
         <div className="flex-grow flex flex-col md:flex-row">
           <div className="flex w-full md:w-1/2">
@@ -53,6 +53,20 @@ function Signin() {
                 fullWidth
               />
             </div>
+            <div className="flex gap-4">
+              <div>
+                <FormControlLabel
+                  control={<Checkbox color="primary" size="small" />}
+                  label="Remember Me"
+                />
+              </div>
+              <div>
+                <h1 className="mt-1 text-blue-500">
+                  <a href="/Home" >Forgot Password</a>
+                </h1>
+              </div>
+            </div>
+
             <div className="w-80 mt-4 h-10">
               <Button
                 variant="contained"
