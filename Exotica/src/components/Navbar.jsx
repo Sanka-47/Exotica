@@ -8,7 +8,7 @@ import Typography from "@mui/material/Typography";
 import { styled, alpha } from "@mui/material/styles";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
-import "../pages/css/Signin.css";
+// import "../pages/css/Signin.css";
 
 const Search = styled("div")(({ theme }) => ({
     position: "relative",
@@ -52,7 +52,7 @@ const Search = styled("div")(({ theme }) => ({
     },
   }));
 
-function Navbar() {
+export function Navbar() {
   return (
     <div className="outline md:outline-[#e8ddce]">
         <Box sx={{ flexGrow: 1 }}>
@@ -93,4 +93,3 @@ function Navbar() {
   )
 }
 
-export default Navbar

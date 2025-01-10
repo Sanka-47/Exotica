@@ -5,51 +5,48 @@ import UnstyledButtonsIntroduction from "@/components/UnstyledButtonsIntroductio
 
 function EndNavbar() {
   return (
-    <div>
-      <div className="bg-[#0d1521] h-[18rem] p-10 flex justify-between">
-        <div className="w-[24rem]">
-          <h1 className="text-[#f6ddce] text-xl m-2">Why EXOTICA</h1>
-          <div className="grid grid-cols-2 grid-rows-2 gap-4 p-4">
-            <h1 className="text-[#f6ddce] text-base">
-              <span className="font-bold text-white">
-                14000+
-                <br />
-              </span>
-              Auction Completed
-            </h1>
-            <h1 className="text-[#f6ddce] text-base justify-self-end">
-              <span className="font-bold text-white">
-                $550M+
-                <br />
-              </span>
-              Value of cars sold
-            </h1>
-            <h1 className="text-[#f6ddce] text-base">
-              <span className="font-bold text-white">
-                685k+
-                <br />
-              </span>
-              Registered members
-            </h1>
-            <h1 className="text-[#f6ddce] text-base justify-self-end">
-              <span className="font-bold text-white">
-                83%+
-                <br />
-              </span>
-              Sell-through rate
-            </h1>
+    <div className="bg-[#0d1521] min-h-[18rem]">
+      <div className="container mx-auto px-4 py-8 sm:py-10">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-4 lg:justify-between">
+          {/* Why EXOTICA Section */}
+          <div className="w-full lg:w-1/3">
+            <h1 className="text-[#f6ddce] text-xl mb-4 sm:mb-6">Why EXOTICA</h1>
+            <div className="grid grid-cols-2 gap-4 sm:gap-6">
+              <div className="text-[#f6ddce] text-sm sm:text-base">
+                <span className="font-bold text-white block mb-1">14000+</span>
+                Auction Completed
+              </div>
+              <div className="text-[#f6ddce] text-sm sm:text-base text-right">
+                <span className="font-bold text-white block mb-1">$550M+</span>
+                Value of cars sold
+              </div>
+              <div className="text-[#f6ddce] text-sm sm:text-base">
+                <span className="font-bold text-white block mb-1">685k+</span>
+                Registered members
+              </div>
+              <div className="text-[#f6ddce] text-sm sm:text-base text-right">
+                <span className="font-bold text-white block mb-1">83%+</span>
+                Sell-through rate
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="w-[28rem]">
-          <BasicCard />
-        </div>
-        <div className="w-[28rem]">
-          <h1 className="text-[#f6ddce] text-xl mb-4">Get the daily Email</h1>
-          <div className="mb-3">
-            <UnstyledInputIntroduction />
+
+          {/* Review Card Section */}
+          <div className="w-full lg:w-1/3 mt-8 lg:mt-0">
+            <BasicCard />
           </div>
-          <div>
-            <UnstyledButtonsIntroduction />
+
+          {/* Email Subscription Section */}
+          <div className="w-full lg:w-1/3 mt-8 lg:mt-0">
+            <h1 className="text-[#f6ddce] text-xl mb-4">Get the daily Email</h1>
+            <div className="space-y-3">
+              <div className="w-full">
+                <UnstyledInputIntroduction />
+              </div>
+              <div className="w-full">
+                <UnstyledButtonsIntroduction />
+              </div>
+            </div>
           </div>
         </div>
       </div>
